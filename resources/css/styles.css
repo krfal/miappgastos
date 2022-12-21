@@ -1,0 +1,18 @@
+    .tableformat table {
+        margin: 0 auto;
+    }
+
+    td,
+    th {
+        text-align: center;
+        padding: 10px;
+        border: solid red 1px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        text-align: center;
+    }

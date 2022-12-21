@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta>
+    <title>Mi Economia</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./resources/css/styles.css">
+</head>
+
+<body>
+    <h1>Mi Economia</h1>
+    <div class="row">
+        <div class="col l5 offset-l1 s12">
+            <div class="tableformat">
+                <table id="transactionTable">
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Descripcion</th>
+                        <th>Monto</th>
+                        <th>Categoria</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col l5 s12">
+            <form id="transactionForm">
+                <div class="input-field">
+                    <p><span>Transacción:</span>
+                        <label>
+                            <i class="small material-icons">add</i>
+                            <input class="with-gap" name="transactionType" type="radio" value="Ingreso" />
+                            <span>Ingreso</span></label>
+                        <label><input class="with-gap" name="transactionType" type="radio" value="Egreso" checked />
+                            <span>Egreso</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field">
+                    <input class="validate" type="text" id="transactionDescription" name="transactionDescription">
+                    <label for="transactionDescription">Descripcion</label>
+                </div>
+                <div class="input-field">
+                    <input class="validate" type="number" id="transactionMonto" type="number" name="transactionMonto">
+                    <label for="transactionMonto">Monto</label>
+                </div>
+                <div>
+                    <label>Categoria</label>
+                    <select class="browser-default" id="transactionCategory" name="transactionCategory">
+                    </select>
+                </div>
+                <div class="formField">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Send
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="resources/js/scripts.js"></script>
+
+</html>
